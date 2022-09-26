@@ -24,7 +24,7 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v1
         with:
-          # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
+          # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS (AZURE secret in my case)
           creds: ${{ secrets.AZURE_SECRET}}
           # Set this value to true to enable Azure PowerShell Login in addition to Az CLI login
           enable-AzPSSession: true
